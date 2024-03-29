@@ -1,0 +1,349 @@
+/* CSS to style the navbar */
+.navbar {
+  background-color: black; /* Set the background color of the navbar to black */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+  background-color: rgb(0, 0, 0);
+}
+
+/* CSS to style the navbar links */
+.navbar-nav .nav-link {
+  color: white; /* Set the default color of the navbar links to white */
+}
+
+/* CSS to change the color of the navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: blue; /* Change the color of the navbar links to blue on hover */
+}
+.first {
+  width: 100%; /* Set the width of the card to 100% of the parent container */
+    height: 80vh; /* Set the height of the card to 100% of the viewport height */
+    display: flex; /* Use flexbox for the card */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Arrange content vertically */
+    background: black;
+}
+.card-body {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+.btn {
+  --green: rgb(124, 195, 219);
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right,#404ad5  1%, transparent 40%,transparent 60% ,#3841c9 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(62, 185, 223, 0.733), 0 0 9px 3px rgba(57, 197, 236, 0.806);
+}
+
+.btn:hover {
+  color:  rgb(124, 195, 219);
+  box-shadow: inset 0 0 10px #51aae999, 0 0 9px 3px rgba(51, 177, 211, 0.801);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(53, 186, 244, 0.845) 40%,rgba(35, 229, 236, 0.817) 60% , transparent 100%);
+}
+
+.btn:hover:before {
+  transform: translateX(15em);
+}
+.card-title {
+  font-size: 4em; /* Increase font size */
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:10px;
+  text-transform: uppercase; /* Optional: Convert text to uppercase */
+  /* Linear gradient color for text */
+}
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+.second{
+  width: 100%; /* Set the width of the card to 100% of the parent container */
+    height: 50vh; /* Set the height of the card to 100% of the viewport height */
+    display: flex; /* Use flexbox for the card */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Arrange content vertically */
+    background-color:black;
+    margin-bottom:1rem;
+    border-radius: 80%;
+    overflow: hidden;
+}
+/*.transparent-background {
+  background-image: url('Hand.png');
+  background-size: cover; Ensures the image covers the entire card 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; /* Adjust the opacity value as needed 
+}*/
+.card-group{
+  margin-left:80px;
+}
+.card-group .card {
+  width: 350px; /* Set the width of each card */
+ /* Add space between cards */
+  height: 200px;
+  border: 2px solid rgba(18, 57, 184, 0.5); /* Blue border */
+  background-color: black;
+}
+.card-group .card:last-child {
+  margin-right: 10px; /* Remove margin-right from the last card */
+  border-radius:10px;
+  margin-left:50px;
+}
+.card-group .card:first-child {
+  margin-left: 100px; /* Remove margin-right from the last card */
+  border-radius:10px;
+}
+/*.second::before {
+  content: "";  
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(28, 28, 28, 0.589); /* Semi-transparent black background */
+.card-group{
+  margin-top: 5rem;
+}
+.first {
+  position: relative; /* Ensure the container is positioned relative to the card */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire width of the card */
+  height: 100%; /* Cover the entire height of the card */
+background-size: cover; /* Ensure the image covers the entire card */
+  background-repeat: no-repeat; 
+}
+body{
+  background-color: black;
+}
+.second {
+  border-radius: 10px; /* Set border radius for rounded edges */
+}
+
+/* CSS for hovered state */
+.second:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Larger shadow effect on hover */
+}
+.second .card-text {
+  color: white;
+}
+.video {
+  position: absolute;
+  margin-top:2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about{
+  margin-top:2rem;
+  margin-left:2rem;
+}
+.card-title-about{
+  font-size: 2em; /* Increase font size */
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Optional: Convert text to uppercase */
+  /* Linear gradient color for text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Embossed effect */
+  text-shadow: -1px -1px 1px rgba(131, 176, 211, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.card .second {
+  border-color: 2px solid rgba(18, 57, 184, 0.5); /* Blue border */
+}
+.card-title2{
+  margin-top: 1rem;
+  margin-left:0.5rem;
+  color:white;
+  margin-right:0.5rem;
+  font-weight:bolder;
+  font-size:1.5em;
+  margin-bottom:1rem;
+}
+.card-text{
+  margin-left:0.5rem;
+  color:white;
+  margin-right:0.5rem;
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card-title,.card-title-about {
+  text-transform: none; /* This will prevent the title from appearing in all caps */
+}
+.font{
+  font-size:2em;
+}
+.card-title{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.heading{
+  font-weight:200;
+}
+.main {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Adjust the shadow size and color as needed */
+  color: #ffffff; /* Set the text color to match the background color */
+  font-size:larger;
+}
+.main{
+  background: #121FCF;
+  background: linear-gradient(to right, #0816de 0%, #2175dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.footer{
+  background-color:rgba(1, 12, 48, 0.5);
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gap-4 {
+  gap: 1rem;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.join{
+  margin-top:2rem;
+}
+.heading{
+  font-size: 5em;
+}
+.main{
+  font-weight:bold;
+}
+.card-body-secondary {
+  position: relative;
+  left:50%;
+  top:20%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em;
+}
+.card-body-secondary2{
+  position: relative;
+  left:50%;
+  top:35%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em;
+}
+.about {
+  display: flex;
+  justify-content: space-between; /* To create space between the card and the image */
+}
+.image-container {
+  width: 30%; /* Adjust as needed */
+  margin-left:100px;
+  opacity:0.5;
+}
+.list-disc{
+  color:white;
+}
+.card-body-list{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+}
+.card-title2{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.card-title-about{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.card-body-contact{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;  
+}
+.styling{
+  margin-left:310px;
+}
+.card-body-list {
+  width: 100%;
+}
+.card-text .list-disc {
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing content */
+  text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
+  margin-left: 0;
+}
+.center-horizontal2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-disc li {
+  list-style-type: disc; /* Use disc bullets */
+  margin-left: 7rem; /* Adjust space between bullet and text */
+}
+.card-text-list{
+  color:white;
+  margin-right:0.5rem;
+}
+.list-disc {
+  margin-left: 0; /* Remove default margin */
+  padding-left: 0; /* Remove default padding */
+}
