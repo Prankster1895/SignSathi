@@ -82,12 +82,11 @@
 }
 .second{
   width: 100%; /* Set the width of the card to 100% of the parent container */
-    height: 50vh; /* Set the height of the card to 100% of the viewport height */
+    height: 45vh; /* Set the height of the card to 100% of the viewport height */
     display: flex; /* Use flexbox for the card */
     justify-content: center; /* Center content horizontally */
     flex-direction: column; /* Arrange content vertically */
     background-color:black;
-    margin-bottom:1rem;
     border-radius: 80%;
     overflow: hidden;
 }
@@ -99,7 +98,7 @@
   background-position: center; /* Adjust the opacity value as needed 
 }*/
 .card-group{
-  margin-left:80px;
+  margin-left:5rem;
 }
 .card-group .card {
   width: 350px; /* Set the width of each card */
@@ -109,12 +108,12 @@
   background-color: black;
 }
 .card-group .card:last-child {
-  margin-right: 10px; /* Remove margin-right from the last card */
+  margin-right: 2rem; /* Remove margin-right from the last card */
   border-radius:10px;
-  margin-left:50px;
+  margin-left:3rem;
 }
 .card-group .card:first-child {
-  margin-left: 100px; /* Remove margin-right from the last card */
+  margin-left: 6rem; /* Remove margin-right from the last card */
   border-radius:10px;
 }
 /*.second::before {
@@ -162,7 +161,7 @@ body{
   transform: translate(-50%, -50%);
 }
 .about{
-  margin-top:2rem;
+  margin-top:1rem;
   margin-left:2rem;
 }
 .card-title-about{
@@ -284,8 +283,10 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .image-container {
   width: 30%; /* Adjust as needed */
-  margin-left:100px;
+  margin-left:10rem;;
   opacity:0.5;
+  position:relative;
+  padding-top:0;
 }
 .list-disc{
   color:white;
@@ -343,4 +344,14 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .list-disc {
   margin-left: 0; /* Remove default margin */
   padding-left: 0; /* Remove default padding */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .overlay {
+  opacity: 1;
 }
