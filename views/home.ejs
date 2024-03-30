@@ -222,6 +222,12 @@
               </div>
           </div>
       </footer>
+<% if (userCreated) { %>
+    <script>
+        // Disable the "Join the waitlist" button
+        document.getElementById("join").disabled = true;
+    </script>
+<% } %>
       
     
   <script src="particles.js"></script>
