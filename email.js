@@ -18,7 +18,9 @@ const sendEmail = async (firstName, lastName, email, phoneNumber, message) => {
             to: 'signsathi.reach@gmail.com', // Your Gmail email address
             subject: 'New message from website',
             text: `
+                Name: ${firstName} ${lastName}\n
                 Email: ${email}\n
+                Phone Number: ${phoneNumber}\n
                 Message: ${message}
             `
         };
