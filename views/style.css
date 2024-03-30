@@ -355,3 +355,56 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .image-container:hover .overlay {
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .first,
+  .second {
+    height: auto; /* Set height to auto for flexibility */
+  }
+
+  .image-container {
+    width: 100%; /* Ensure images take up full width on smaller screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 1rem; /* Add some top margin for spacing */
+  }
+
+  .card-group .card {
+    width: 100%; /* Ensure cards take up full width */
+    margin: 1rem 0; /* Add margin for spacing between cards */
+  }
+
+  .card-group .card:first-child,
+  .card-group .card:last-child {
+    margin: 1rem 0; /* Add margin for spacing at top and bottom */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for navbar links */
+  }
+
+  .card-title,
+  .card-title-about {
+    font-size: 2em; /* Reduce font size for card titles on smaller screens */
+  }
+
+  .card-body-secondary,
+  .card-body-secondary2 {
+    top: 10%; /* Adjust vertical position of card bodies */
+  }
+
+  .footer {
+    padding: 1rem; /* Add padding to footer for spacing */
+  }
+}
+
