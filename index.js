@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const { sendConfirmationEmail } = require('./nodemailer');
 const { sendEmail } = require('./email');
 const app=express();
+const mongoose = require("mongoose");
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -54,6 +55,50 @@ app.post('/send-email', async (req, res) => {
         res.redirect("/");
     } catch (error) {
         console.error('Error:', error);
+        res.status(500).send('Error sending email');
+    }
+});
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => {
+        console.log("Database connected successfully");
+    })
+    .catch((err) => {
+        console.error("Database connection error:", err);
+    });
+
+// Route to send fetched users data as email
+app.get("/send-fetched-data-email/:userEmail", async (req, res) => {
+    const { userEmail } = req.params;
+
+    try {
+        // Fetch data from MongoDB Atlas
+        const users = await collection.find({}).exec();
+        console.log("Fetched users:", users);
+
+        // Send email
+        const transporter = nodemailer.createTransport({
+            service: 'Gmail', // Assuming you want to use Gmail SMTP
+            auth: {
+                user: 'signsathi.reach@gmail.com', // Your Gmail email address
+                pass: 'vlzw stjx ajpd lfpm' // Your Gmail password
+            }
+        });
+
+        // Construct email message
+        const mailOptions = {
+            from: userEmail, // Set the "from" field to the user's email address
+            to: 'signsathi.reach@gmail.com', // Your email address to receive the email
+            subject: 'Fetched Users Data',
+            text: `Fetched users data:\n${JSON.stringify(users, null, 2)}`
+        };
+
+        // Send the email
+        const info = await transporter.sendMail(mailOptions);
+        console.log('Email sent: ' + info.response);
+
+        res.send('Email sent successfully');
+    } catch (error) {
+        console.error('Error sending email:', error);
         res.status(500).send('Error sending email');
     }
 });
