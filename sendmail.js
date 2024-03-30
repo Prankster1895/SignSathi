@@ -1,31 +1,39 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
-function sendEmail(user) {
-    // Define email transporter
-    const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'your_email@gmail.com', // Your Gmail address
-            pass: 'your_password' // Your Gmail password
-        }
-    });
+// Function to send email
+const sendEmail = async (name, email, Mob, Org, Pos) => {
+    try {
+        // Create a nodemailer transporter
+        const transporter = nodemailer.createTransport({
+            service: 'Gmail', // Assuming you want to use Gmail SMTP
+            auth: {
+                user: 'signsathi.reach@gmail.com', // Your Gmail email address
+                pass: 'vlzw stjx ajpd lfpm' // Your Gmail password
+            }
+        });
 
-    // Prepare email content
-    const mailOptions = {
-        from: user.email, // Set sender's email dynamically
-        to: 'your_email@gmail.com', // Your email address
-        subject: 'New User Registered',
-        text: `New user registered:\n\nName: ${user.name}\nEmail: ${user.email}\nMobile: ${user.Mob}\nOrganization: ${user.Org}\nPosition: ${user.Pos}`
-    };
+        // Email message options
+        const mailOptions = {
+            from: email, // Your Gmail email address
+            to: 'signsathi.reach@gmail.com', // Your Gmail email address
+            subject: 'New message from website',
+            text: `
+            Name: ${name} 
+            Email: ${email}\n
+            Phone Number: ${Mob}\n
+            Organisation: ${Org}
+            Position: ${Pos}\n
+            `
+        };
 
-    // Send email
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            console.error('Error sending email:', error);
-        } else {
-            console.log('Email sent:', info.response);
-        }
-    });
-}
+        // Send the email
+        const info = await transporter.sendMail(mailOptions);
+        console.log('Email sent: ' + info.response);
+        return 'Email sent successfully';
+    } catch (error) {
+        console.error('Error sending email:', error);
+        throw error;
+    }
+};
 
-module.exports = sendEmail;
+module.exports = { sendEmail };
