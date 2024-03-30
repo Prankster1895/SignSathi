@@ -52,6 +52,7 @@ app.post('/send-email', async (req, res) => {
         // Send email
         const result = await sendEmail(firstName, lastName, email, phoneNumber, message);
         res.send(result);
+        res.redirect("/");
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Error sending email');
