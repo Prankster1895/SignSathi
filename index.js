@@ -35,6 +35,7 @@ app.post("/Signup",async (req,res)=>{
         console.log(userData);
         await sendConfirmationEmail(data.email);
         res.redirect('/');
+        res.render("home", { userCreated: true });
     } catch (error) {
         console.error(error);
         res.status(500).send("Error creating user");
