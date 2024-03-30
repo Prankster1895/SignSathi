@@ -318,9 +318,6 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   transform: translate(-50%, -50%);
   text-align: center;  
 }
-.styling{
-  margin-left:310px;
-}
 .card-body-list {
   width: 100%;
 }
