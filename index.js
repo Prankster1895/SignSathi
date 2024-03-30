@@ -34,7 +34,7 @@ app.post("/Signup",async (req,res)=>{
         const userData = await collection.insertMany(data);
         console.log(userData);
         await sendConfirmationEmail(data.email);
-        res.send("User created successfully");
+        res.redirect('/home');
     } catch (error) {
         console.error(error);
         res.status(500).send("Error creating user");
