@@ -36,3 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log("Error detected");
     }
 });
+if (userCreated) { 
+
+        // Disable the "Join the waitlist" button
+        document.getElementById("join").disabled = true;
+
+ } 
