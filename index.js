@@ -3,6 +3,7 @@ const path=require("path");
 const bcrypt=require("bcrypt");
 const bodyParser = require('body-parser');
 const { sendConfirmationEmail } = require('./nodemailer');
+const nodemailer = require("nodemailer");
 const { sendEmail } = require('./email');
 const app=express();
 const mongoose = require("mongoose");
