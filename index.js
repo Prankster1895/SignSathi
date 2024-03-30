@@ -4,7 +4,6 @@ const bcrypt=require("bcrypt");
 const bodyParser = require('body-parser');
 const { sendConfirmationEmail } = require('./nodemailer');
 const { sendEmail } = require('./email');
-const { senddataEmail } = require('./sendmail');
 const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -57,26 +56,6 @@ app.post('/send-email', async (req, res) => {
         res.status(500).send('Error sending email');
     }
 });
-app.get("/Signup",(req,res)=>{
-    res.render("signup")
-})
-app.post('/sendMail', async (req, res) => {
-    // Retrieve form data
-    const { name, email, Mob, Org, Pos } = req.body;
-
-    try {
-        // Send email
-        const result = await senddataEmail(name, email, Mob, Org, Pos);
-        res.send(result);
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Error sending email');
-    }
-});
-app.listen(port,()=>{
-    console.log("Server Started")
-})
-
 app.listen(port,()=>{
     console.log("Server Started")
 })
