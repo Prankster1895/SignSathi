@@ -44,7 +44,6 @@ app.post("/Signup",async (req,res)=>{
     try {
         // Send email
         const result = await sendRegEmail(Username, Mailid, Mob, Org, Pos);
-        res.redirect("/");
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Error sending email');
