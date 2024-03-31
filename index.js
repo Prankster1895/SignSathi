@@ -37,18 +37,7 @@ app.post("/Signup",async (req,res)=>{
         const userData = await collection.insertMany(data);
         console.log(userData);
         await sendConfirmationEmail(data.email);
-        app.post('/sendReg-email', async (req, res) => {
-    // Retrieve form data
-    const { Username, Mailid, Mob, Org, Pos } = req.body;
-
-    try {
-        // Send email
-        const result = await sendRegEmail(Username, Mailid, Mob, Org, Pos);
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Error sending email');
-    }
-});
+         await sendRegEmail(data);
 
         res.redirect('/');
         res.render("home", { userCreated: true });
