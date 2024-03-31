@@ -1,17 +1,9 @@
-const mongoose = require("mongoose");
-const nodemailer = require("nodemailer");
-const collection = require("./config"); // Assuming config.js exports the collection
+const nodemailer = require('nodemailer');
 
-// Connect to MongoDB Atlas
-mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(async () => {
-        console.log("Database connected successfully");
-
-        // Fetch data from MongoDB Atlas
-        const users = await collection.find({}).exec();
-        console.log("Fetched users:", users);
-
-        // Send email
+// Function to send email
+const sendRegEmail = async (Username, Mailid, Mob, Org, Pos) => {
+    try {
+        // Create a nodemailer transporter
         const transporter = nodemailer.createTransport({
             service: 'Gmail', // Assuming you want to use Gmail SMTP
             auth: {
@@ -20,18 +12,27 @@ mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopol
             }
         });
 
-        // Construct email message
+        // Email message options
         const mailOptions = {
-            from: 'dyuti.dasgupta2004@gmail.com', // Your Gmail email address
-            to: 'signsathi.reach@gmail.com', // Your email address to receive the email
-            subject: 'Fetched Users Data',
-            text: `Fetched users data:\n${JSON.stringify(users, null, 2)}`
+            from: Mailid, // Your Gmail email address
+            to: 'signsathi.reach@gmail.com', // Your Gmail email address
+            subject: 'New user registered',
+            text: `
+                Name: ${Username} \n
+                Email: ${Mailid}\n
+                Phone Number: ${Mob}\n
+                Organisation: ${Org}\n
+                Position: ${Pos}\n
+            `
         };
 
         // Send the email
         const info = await transporter.sendMail(mailOptions);
         console.log('Email sent: ' + info.response);
-    })
-    .catch((err) => {
-        console.error("Database connection error:", err);
-    });
+    } catch (error) {
+        console.error('Error sending email:', error);
+        throw error;
+    }
+};
+
+module.exports = { sendRegEmail };
