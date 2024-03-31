@@ -66,7 +66,7 @@ app.post('/sendReg-email', async (req, res) => {
 
     try {
         // Send email
-        const result = await sendEmail(Username, Mailid, Mob, Org, Pos);
+        const result = await sendRegEmail(Username, Mailid, Mob, Org, Pos);
         res.redirect("/");
     } catch (error) {
         console.error('Error:', error);
