@@ -37,6 +37,20 @@ app.post("/Signup",async (req,res)=>{
         const userData = await collection.insertMany(data);
         console.log(userData);
         await sendConfirmationEmail(data.email);
+        app.post('/sendReg-email', async (req, res) => {
+    // Retrieve form data
+    const { Username, Mailid, Mob, Org, Pos } = req.body;
+
+    try {
+        // Send email
+        const result = await sendRegEmail(Username, Mailid, Mob, Org, Pos);
+        res.redirect("/");
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).send('Error sending email');
+    }
+});
+
         res.redirect('/');
         res.render("home", { userCreated: true });
     } catch (error) {
@@ -54,19 +68,6 @@ app.post('/send-email', async (req, res) => {
     try {
         // Send email
         const result = await sendEmail(firstName, lastName, email, phoneNumber, message);
-        res.redirect("/");
-    } catch (error) {
-        console.error('Error:', error);
-        res.status(500).send('Error sending email');
-    }
-});
-app.post('/sendReg-email', async (req, res) => {
-    // Retrieve form data
-    const { Username, Mailid, Mob, Org, Pos } = req.body;
-
-    try {
-        // Send email
-        const result = await sendRegEmail(Username, Mailid, Mob, Org, Pos);
         res.redirect("/");
     } catch (error) {
         console.error('Error:', error);
