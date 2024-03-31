@@ -1,7 +1,6 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
-// Function to send email
-const sendRegEmail = async (Username, Mailid, Mob, Org, Pos) => {
+async function sendRegEmail(userData) {
     try {
         // Create a nodemailer transporter
         const transporter = nodemailer.createTransport({
@@ -14,25 +13,27 @@ const sendRegEmail = async (Username, Mailid, Mob, Org, Pos) => {
 
         // Email message options
         const mailOptions = {
-            from: Mailid, // Your Gmail email address
-            to: 'signsathi.reach@gmail.com', // Your Gmail email address
-            subject: 'New user registered',
+            from: userData.email, // Use the user's email address as the 'from' field
+            to: 'your-email@gmail.com', // Your email address to receive the email
+            subject: 'New User Registration',
             text: `
-                Name: ${Username} \n
-                Email: ${Mailid}\n
-                Phone Number: ${Mob}\n
-                Organisation: ${Org}\n
-                Position: ${Pos}\n
+                New user registered with the following details:
+                Name: ${userData.name}
+                Email: ${userData.email}
+                Phone Number: ${userData.Mob}
+                Organisation: ${userData.Org}
+                Position: ${userData.Pos}
             `
         };
 
         // Send the email
         const info = await transporter.sendMail(mailOptions);
-        console.log('Email sent: ' + info.response);
+        console.log('Registration Email sent:', info.response);
+        return 'Registration Email sent successfully';
     } catch (error) {
-        console.error('Error sending email:', error);
+        console.error('Error sending registration email:', error);
         throw error;
     }
-};
+}
 
 module.exports = { sendRegEmail };
