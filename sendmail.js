@@ -14,7 +14,7 @@ async function sendRegEmail(userData) {
         // Email message options
         const mailOptions = {
             from: userData.email, // Use the user's email address as the 'from' field
-            to: 'your-email@gmail.com', // Your email address to receive the email
+            to: 'signsathi.reach@gmail.com', // Your email address to receive the email
             subject: 'New User Registration',
             text: `
                 New user registered with the following details:
