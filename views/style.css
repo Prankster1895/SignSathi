@@ -635,7 +635,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 
 @media (max-width: 600px) {
   .card-group .card {
-    width: calc(100% - 2rem); /* Set the width of each card to 100% minus the margin on smaller screens */
+    width: calc(50% - 2rem); /* Set the width of each card to 100% minus the margin on smaller screens */
   }
 }
 
