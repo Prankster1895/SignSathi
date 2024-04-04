@@ -71,7 +71,7 @@
 .card-title {
   font-size: 4em; /* Increase font size */
   text-align: center;
-  margin-bottom: 20px;
+  /*margin-bottom: 10px;*/
   margin-top:10px;
   text-transform: uppercase; /* Optional: Convert text to uppercase */
   /* Linear gradient color for text */
@@ -82,7 +82,7 @@
 }
 .second{
   width: 100%; /* Set the width of the card to 100% of the parent container */
-    height: 45vh; /* Set the height of the card to 100% of the viewport height */
+    height: 50vh; /* Set the height of the card to 100% of the viewport height */
     display: flex; /* Use flexbox for the card */
     justify-content: center; /* Center content horizontally */
     flex-direction: column; /* Arrange content vertically */
@@ -124,9 +124,7 @@
   width: 100%;
   height: 100%; 
   background-color: rgba(28, 28, 28, 0.589); /* Semi-transparent black background */
-.card-group{
-  margin-top: 5rem;
-}
+
 .first {
   position: relative; /* Ensure the container is positioned relative to the card */
 }
@@ -155,10 +153,11 @@ body{
   color: white;
 }
 .video {
-  position: absolute;
-  margin-top:2rem;
+  position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-bottom:2rem;
+  margin-top:4rem;
 }
 .about{
   margin-top:1rem;
@@ -314,7 +313,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .card-body-contact{
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;  
@@ -322,20 +321,11 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .card-body-list {
   width: 100%;
 }
-.card-text .list-disc {
-  white-space: nowrap; /* Prevent line breaks */
-  overflow: hidden; /* Hide overflowing content */
-  text-overflow: ellipsis; /* Display ellipsis (...) for overflow */
-  margin-left: 0;
-}
+
 .center-horizontal2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.list-disc li {
-  list-style-type: disc; /* Use disc bullets */
-  margin-left: 7rem; /* Adjust space between bullet and text */
 }
 .card-text-list{
   color:white;
@@ -407,4 +397,107 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
     padding: 1rem; /* Add padding to footer for spacing */
   }
 }
+/* Style for the popup */
+.popup {
+  display: none;
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.9); /* Background color with opacity */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+  margin-left:5.5rem;
+}
 
+/* Show popup when hovering over the card */
+.card:hover .popup {
+  display: block;
+  opacity: 1; /* Change opacity to fully visible */
+}
+
+.popup h5,p{
+  color:white;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.popup2 {
+  background-color: rgb(14, 13, 13,0.8);
+  padding: 40px; /* Increase padding to increase size */
+    border-radius: 10px;
+    animation: bounce 0.5s;
+    width: 80%; /* Set width */
+    max-width: 400px; /* Set maximum width */
+    height: 60vh; /* Set height to auto for content flexibility */
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.close-popup,.popup-title{
+  color:white;
+}
+.row{
+  margin-left:8rem;
+  margin-bottom:5rem;
+}
+.card-main{
+  margin-right:5rem;
+  height:40vh;
+}
+.card-body-main{
+  height:40vh;
+}
+.why{
+  height:15vh;
+}
+.about2{
+  margin-top:2rem;
+  display: flex;
+  justify-content: space-between; /* To create space between the card and the image */
+}
+.image-container2 {
+  width: 30%; /* Adjust as needed */
+  margin-left:5rem;;
+  opacity:0.5;
+  position:relative;
+  padding-top:0;
+}
+.why-bg{
+  background-image: url('LogoHand.jpg');
+  background-repeat:no-repeat;
+  background-size:contain; /* Adjust as needed */
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+.popup-container-cost {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.image-container2 {
+  width: 30%; /* Adjust as needed */
+  opacity:0.5;
+  position:relative;
+  padding-top:0;
+}
