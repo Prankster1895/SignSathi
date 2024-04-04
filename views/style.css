@@ -1026,9 +1026,14 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   height:15vh;
 }
 .about2{
-  margin-top:2rem;
+ width: 100%;
+  height: auto; /* Change to auto height */
   display: flex;
-  justify-content: space-between; /* To create space between the card and the image */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+  padding: 20px;
 }
 .image-container2 {
   width: 30%; /* Adjust as needed */
