@@ -620,6 +620,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   display: flex;
   justify-content: space-between;
   margin-left: 0; /* Reset margin */
+  width:100px;
 }
 
 .card-group .card {
@@ -649,6 +650,23 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
     margin: 2% 0; /* Add a larger margin between cards */
   }
 }
+  .card-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+  justify-content: space-between; /* Distribute space between cards */
+}
+
+.card {
+  width: calc(50% - 10px); /* Set the width of each card to 50% minus the margin */
+  margin-bottom: 20px; /* Add some margin between cards */
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%; /* Set the width of each card to 100% on smaller screens */
+  }
+}
+
 /*.second::before {
   content: "";  
   position: absolute;
