@@ -541,6 +541,16 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   background: black;
   padding: 20px; /* Add padding for better spacing */
 }
+  .included{
+  width: 100%;
+  height: auto; /* Change to auto height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+  padding: 20px; /* Add padding for better spacing */
+  }
 
 .card-body {
   text-align: center;
