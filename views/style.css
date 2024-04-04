@@ -604,14 +604,14 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 
 .second {
   width: 100%; /* Set the width to 90% of the parent container for better responsiveness */
-  height: auto; /* Change height to auto for responsiveness */
+  height: 80vw; /* Change height to auto for responsiveness */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: black;
   border-radius: 50%; /* Adjust border-radius for a circular shape */
-  overflow: visible;
+  overflow: hidden;
   padding: 20px; /* Add padding for better spacing */
 }
 
