@@ -617,8 +617,6 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 
 .card-group .card {
-  width: calc(50% - 2rem); /* Set the width of each card to 50% minus the margin */
-  margin: 1rem; /* Add space between cards */
   height: 200px;
   border: 2px solid rgba(18, 57, 184, 0.5);
   background-color: black;
@@ -626,19 +624,25 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 
 .card-group .card:last-child {
-  margin-right: 1rem; /* Add margin-right back to the last card */
+  margin-right: 0.5rem; /* Add margin-right back to the last card */
 }
 
 .card-group .card:first-child {
-  margin-left: 1rem; /* Add margin-left back to the first card */
+  margin-left: 0.5rem; /* Add margin-left back to the first card */
 }
 
-@media (max-width: 600px) {
+.card-group .card {
+  width: 45%; /* Set the width of each card */
+  margin: 1%; /* Add a small margin between cards */
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
   .card-group .card {
-    width: calc(50% - 2rem); /* Set the width of each card to 100% minus the margin on smaller screens */
+    width: 90%; /* Set the width of each card to 90% of the container */
+    margin: 2% 0; /* Add a larger margin between cards */
   }
 }
-
 /*.second::before {
   content: "";  
   position: absolute;
