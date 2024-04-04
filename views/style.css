@@ -575,7 +575,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 
 .second {
-  width: 90%; /* Set the width to 90% of the parent container for better responsiveness */
+  width: 100%; /* Set the width to 90% of the parent container for better responsiveness */
   height: auto; /* Change height to auto for responsiveness */
   display: flex;
   justify-content: center;
