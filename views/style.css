@@ -574,33 +574,40 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   transform: translateX(15em);
 }
 
-.card-title {
-  font-size: 2em; /* Reduce font size for better fit */
-  margin-top: 10px; /* Adjust top margin */
-  text-transform: uppercase;
-}
-
-.center-horizontal {
+.second {
+  width: 90%; /* Set the width to 90% of the parent container for better responsiveness */
+  height: auto; /* Change height to auto for responsiveness */
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 50%; /* Adjust border-radius for a circular shape */
+  overflow: hidden;
+  padding: 20px; /* Add padding for better spacing */
 }
-.second{
-  width: 100%; /* Set the width of the card to 100% of the parent container */
-    height: auto; /* Set the height of the card to 100% of the viewport height */
-    display: flex; /* Use flexbox for the card */
-    justify-content: center; /* Center content horizontally */
-    flex-direction: column; /* Arrange content vertically */
-    background-color:black;
-    border-radius: 80%;
-    overflow: hidden;
+
+.card-body-secondary {
+  text-align: center;
+  margin-top: 10px; /* Adjust margin as needed */
 }
-/*.transparent-background {
-  background-image: url('Hand.png');
-  background-size: cover; Ensures the image covers the entire card 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; /* Adjust the opacity value as needed 
-}*/
+
+.card-title {
+  font-size: 2em; /* Decrease font size for better fit */
+  margin-top: 10px; /* Adjust margin as needed */
+  text-align: center;
+  text-transform: uppercase;
+  color: white; /* Set text color to white */
+}
+
+@media (max-width: 600px) {
+  .second {
+    height: auto; /* Set height to auto for flexibility */
+    border-radius: 10px; /* Adjust border-radius for a rounded shape on smaller screens */
+    margin: 10px auto; /* Center the card horizontally */
+  }
+}
+
 .card-group{
   margin-left:5rem;
 }
