@@ -45,9 +45,9 @@
               <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-                  <a href="#" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium nav-link aboutnav">About</a>
-                  <a href="#" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium nav-link features">Features</a>
+                  <a href="/" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
+                  <a href="/" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium nav-link aboutnav">About</a>
+                  <a href="/" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium nav-link features">Features</a>
                   <a href="#" class="text-white hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium nav-link contact">Contact</a>
                 </div>
               </div>
@@ -89,10 +89,10 @@
         <div class="sm:hidden" id="mobile-menu">
           <div class="space-y-1 px-2 pb-3 pt-2">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link aboutnav">About</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link features">Features</a>
-            <a href="#" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link contact">Contact</a>
+            <a href="/" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Home</a>
+            <a href="/" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link aboutnav">About</a>
+            <a href="/" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link features">Features</a>
+            <a href="contact" class="text-gray-300 hover:bg-gray-900 hover:text-white block rounded-md px-3 py-2 text-base font-medium nav-link contact">Contact</a>
           </div>
         </div>
       </nav>
@@ -107,19 +107,17 @@
     </div>
   </div>
   <div class="center-horizontal">
-  <div class="card second border-blue transparent-background" style="width: 40rem;">
+  <div class="card second why border-blue transparent-background" style="width: 40rem;">
     <div class="card-body-secondary">
       <h5 class="card-title font">Why SignSathi?</h5>
-      <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
-      <p class="card-text">In a world where communication barriers isolate communities, Sign Sathi emerges as a beacon of inclusivity and empowerment. Designed specifically for the diverse linguistic landscape of India, Sign Sathi promises seamless two-way communication for the Deaf and Dumb community, transcending the limitations of Sign Language literacy.</p>
-    </div>
+      </div>
   </div></div>
-  <a href="#" class="btn video">VIEW LIVE DEMO</a>
   <div id="features" class="card-group">
     <div class="card" >
       <div class="card-body2">
-        <h5 class="card-title2">ASL to Speech Translation</h5>
-        <p class="card-text">Can translate ASL to speech via speakers in gloves promoting ease at communicating</p>
+        <h5 class="card-title2">Harnessing ML to revolutionize communication</h5>
+        <a href="#" class="btn popup show-popup">KNOW MORE</a>
+
         <div class="shine"></div>
         <div class="background">
           <div class="tiles">
@@ -131,13 +129,15 @@
           <div class="line line-2"></div>
           <div class="line line-3"></div>
         </div>
+        
       </div>
     </div> <!-- Closing card div here -->
   
     <div class="card"> <!-- Start of second card -->
       <div class="card-body2">
-        <h5 class="card-title2">Voice to Glove Display</h5>
-        <p class="card-text">Can convert voice of users to text for the deaf & dumb, with the help of the OLED screen attached in gloves.</p>
+        <h5 class="card-title2">Cost effectiveness</h5>
+        <p class="card-text"></p>
+        <a href="#" class="btn popup show-popup-cost">KNOW MORE</a>
         <div class="shine"></div>
         <div class="background">
           <div class="tiles">
@@ -152,6 +152,96 @@
       </div>
     </div> <!-- Closing card div here -->
   </div>
+  <div class="popup-container" id="popup-container">
+    <div class="popup2">
+        <h2 class="popup-title">Breaking communication barriers</h2>
+        <p class="popup-description why-bg">With just 250 certified sign language interpreters in India and a deaf population ranging from 1.8 million to 7 million, traditional communication methods fall short. Our product integrates advanced Machine Learning (ML) technology to provide real-time translation between American Sign Language (ASL) and spoken language. By removing the obstacle of interpreting, we empower deaf individuals to communicate freely and confidently, breaking down barriers and fostering inclusivity.
+        </p>
+        <button class="btn close-popup">Close</button>
+    </div>
+</div>
+<div class="popup-container-cost" id="popup-container-cost">
+  <div class="popup2">
+      <h2 class="popup-title-cost">Breaking communication barriers</h2>
+      <p class="popup-description why-bg">Beyond its cutting-edge ML-driven capabilities, our product is crafted with accessibility at its core. We understand the transformative potential of technology and its imperative accessibility. That's why we've made affordability a cornerstone of our design philosophy. By offering our solution at an accessible price point, we're democratizing access to advanced communication tools. Our unwavering commitment to affordability underscores our mission to foster inclusivity and empower individuals from every background to connect, communicate, and thrive..
+      </p>
+      <button class="btn close-popup-cost">Close</button>
+  </div>
+</div>
+
+  <a href="#" class="btn video" style="margin-bottom:0rem;">VIEW LIVE DEMO</a>
+  <div class="about2">
+    <div class="flex">
+      <div class="image-container2">
+        <img src="ASL.png" alt="Description of the image" width="300">
+      </div>
+      
+      <div class="card second transparent-background " style="width: 45rem; margin-bottom:0rem;">
+        <div class="card-body-secondary2 picture">
+          <h5 class="card-title-about font">What is ASL?</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+          <p class="card-text">American Sign Language (ASL) is a complete, complex language that employs signs made with the hands, facial expressions, and body movements to convey meaning. ASL is a visual-spatial language with its own grammar and syntax, distinct from spoken languages like English. It is the primary mode of communication for many deaf individuals and is also used by hearing individuals who communicate with deaf people, such as interpreters and family members.</p>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+  <div id="features" class="card-group" style="margin-top:5rem;">
+    <div class="card" >
+      <div class="card-body2">
+        <h5 class="card-title2">ASL to Speech Translation</h5>
+        <p class="card-text">Can translate ASL to speech via speakers in gloves promoting ease at communicating</p>
+        <a href="#" class="btn popup show-popup">BEHIND THE SCENES</a>
+
+        <div class="shine"></div>
+        <div class="background">
+          <div class="tiles">
+            <div class="tile tile-1"></div>
+            <!-- More tiles... -->
+            <div class="tile tile-10"></div>
+          </div>
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        
+      </div>
+    </div> <!-- Closing card div here -->
+  
+    <div class="card"> <!-- Start of second card -->
+      <div class="card-body2">
+        <h5 class="card-title2">Voice to Glove Display</h5>
+        <p class="card-text">Can convert voice of users to text for the deaf & dumb, with the help of the OLED screen attached in gloves.</p>
+        <a href="#" class="btn popup show-popup">BEHIND THE SCENES</a>
+        <div class="shine"></div>
+        <div class="background">
+          <div class="tiles">
+            <div class="tile tile-1"></div>
+            <!-- More tiles... -->
+            <div class="tile tile-10"></div>
+          </div>
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+      </div>
+    </div> <!-- Closing card div here -->
+  </div>
+  <div class="popup-container" id="popup-container">
+    <div class="popup2">
+        <h2 class="popup-title">ASL to Speech Translation</h2>
+        <p class="popup-description"><ul class="list-disc">
+          <li>Flex sensors and accelerometers read data from the hand movements.</li>
+          <li>This captured data is then sent via API to the cloud. </li>
+          <li>ML model hosted in cloud processes the data and gives suitable output.</li>
+          <li>This output is converted to speech and played via speaker.</li>
+          <li>A guaranteed smile on the faces.</li>
+        </ul></p>
+        <button class="btn close-popup">Close</button>
+    </div>
+</div>
 
   <div class="about">
     <div class="flex">
@@ -160,7 +250,7 @@
         <div class="card-body-secondary2 picture">
           <h5 class="card-title-about font">So why are we doing it?</h5>
           <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
-          <p class="card-text">Envision a scenario where a deaf child or a stroke survivor or maybe a challenged educator, anyone who knows a lot more than others, once robbed of speech by their condition, engages in heartfelt conversations with their world, articulating their struggles and triumphs without the need for external aid. Feel the profound sense of empowerment as they reclaim their voice, one word at a time. Imagine the freedom for them! That's why!!! </p>
+          <p class="card-text">At SignSathi, we believe that every individual deserves the freedom to express themselves, connect with others, and navigate the world with ease. Our mission is clear: to bridge the gap between the hearing and the deaf communities, fostering inclusivity and understanding. With empathy and innovation as our guiding principles, we've dedicated ourselves to creating transformative solutions for individuals with hearing impairments. Every aspect of our product, from code to design, reflects our unwavering commitment to this cause. </p>
         </div>
       </div>
       <div class="image-container">
@@ -171,30 +261,63 @@
     </div>
   </div>
   
-    <div class="center-horizontal">
-      <div class="card second transparent-background" style="width: 40rem;border: 2px solid rgb(13, 13, 142);">
-        <div class="card-body-list">
-          <h5 class="card-title font">What's included?</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
-          <p class="card-text"> <ul class="list-disc">
-            <li>Potential to train any Indian language with optimized accuracy.</li>
-            <li>Smooth 2-way communication enhancing sharing of ideas.</li>
-            <li>An OLED screen that reciprocates with haptics for the user.</li>
-            <li>Works with mobile hotspot at any suitable place.</li>
-            <li>A guaranteed smile on the faces of millions.</li>
-          </ul></p>
+      
+      <div class="flex" style="margin-top:2rem;">
+        <div class="image-container2">
+          <img src="Main.png" alt="Description of the image" width="400">
         </div>
-      </div></div>
+    <div class="card-container">
+        <!-- What's Included? Card -->
+        <div class="card second transparent-background" style="width: 25rem; border: 2px solid rgb(13, 13, 142); margin-left: 10rem;">
+            <div class="card-body-list">
+                <h5 class="card-title font">What's included?</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                <p class="card-text">
+                    <ul class="list-disc">
+                        <li>Train any Indian language with optimized accuracy.</li>
+                        <li>Smooth 2-way communication .</li>
+                        <li>An OLED screen that reciprocates with haptics.</li>
+                        <li>Works with mobile hotspot.</li>
+                        <li>A guaranteed smile on the faces.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <!-- Contact Us Card -->
+        
+        </div>
+    </div>
+
+
+      <div class="about2">
+        <div class="flex">
+          <div class="image-container2">
+            <img src="" alt="Description of the image" width="300">
+          </div>
+          
+          <div class="card second transparent-background" style="width: 45rem;">
+            <div class="card-body-secondary2 picture">
+              <h5 class="card-title-about font">Statistics</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+              <p class="card-text">India  constitutes  2.4  million  of  Deaf  and  Dumb population,  which  holds  the  world‘s  20%  of the  Deaf and Dumb Population. This person lacks the amenities which a normal person  should own. The big  reason behind this  is lack of communication as deaf people are unable to listen and  dumb  people  are  unable  to  speak.</p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
       <div class="center-horizontal">
-        <div class="card second styling transparent-background cnt" style="width:40rem;">
+        <div class="card second styling transparent-background cnt" style="width:50rem;">
           <div class="card-body-contact">
             <h5 class="card-title font">Want updates?</h5>
+            <p class="card-text" style="margin-bottom:1rem;">Join us on this journey to revolutionize lives and create a world where everyone has the opportunity to be heard and understood.</p>
             <a href="/contact" class="btn" onclick="redirectToContact()">Get In Touch!!!</a>
             <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
             </div>
         </div>
         </div>
-      
         <footer class="bg-gray-800 text-white py-10">
           <div class="container mx-auto px-4">
               <div class="flex justify-between items-center">
@@ -222,7 +345,6 @@
               </div>
           </div>
       </footer>
-
       
     
   <script src="particles.js"></script>
