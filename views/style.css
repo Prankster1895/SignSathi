@@ -530,6 +530,16 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .navbar-nav .nav-link:hover {
   color: blue; /* Change the color of the navbar links to blue on hover */
 }
+  .card-body-secondary2 {
+  max-width: calc(100% - 75px); /* Set max width for the text content */
+}
+
+.card-title-about {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflow */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflowed text */
+}
+
 
   .first {
   width: 100%;
