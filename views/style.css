@@ -533,6 +533,9 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   .card-body-secondary2 {
   max-width: calc(100% - 75px); /* Set max width for the text content */
 }
+  .flex{
+    flex-direction:column;
+  }
 
 .card-title-about {
   white-space: nowrap; /* Prevent text from wrapping */
