@@ -628,7 +628,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   display: flex;
   justify-content: space-between;
   margin-left: 0; /* Reset margin */
-  width:100px;
+  width:100%;
 }
 
 .card-group .card {
