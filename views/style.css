@@ -1,4 +1,5 @@
 /* CSS to style the navbar */
+@media only screen and (min-width: 1025px) {
 .navbar {
   background-color: black; /* Set the background color of the navbar to black */
   position: sticky;
@@ -500,4 +501,512 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   opacity:0.5;
   position:relative;
   padding-top:0;
+}
+}
+@media only screen and (max-width: 600px) {
+  /* CSS to style the navbar */
+.navbar {
+  background-color: black; /* Set the background color of the navbar to black */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+  background-color: rgb(0, 0, 0);
+}
+
+/* CSS to style the navbar links */
+.navbar-nav .nav-link {
+  color: white; /* Set the default color of the navbar links to white */
+}
+
+/* CSS to change the color of the navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: blue; /* Change the color of the navbar links to blue on hover */
+}
+.first {
+  width: 100%; /* Set the width of the card to 100% of the parent container */
+    height: 80vh; /* Set the height of the card to 100% of the viewport height */
+    display: flex; /* Use flexbox for the card */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Arrange content vertically */
+    background: black;
+}
+.card-body {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+.btn {
+  --green: rgb(124, 195, 219);
+  font-size: 15px;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid var(--green);
+  background: linear-gradient(to right,#404ad5  1%, transparent 40%,transparent 60% ,#3841c9 100%);
+  color: var(--green);
+  box-shadow: inset 0 0 10px rgba(62, 185, 223, 0.733), 0 0 9px 3px rgba(57, 197, 236, 0.806);
+}
+
+.btn:hover {
+  color:  rgb(124, 195, 219);
+  box-shadow: inset 0 0 10px #51aae999, 0 0 9px 3px rgba(51, 177, 211, 0.801);
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform .4s ease-in-out;
+  background: linear-gradient(to right, transparent 1%, rgba(53, 186, 244, 0.845) 40%,rgba(35, 229, 236, 0.817) 60% , transparent 100%);
+}
+
+.btn:hover:before {
+  transform: translateX(15em);
+}
+.card-title {
+  font-size: 4em; /* Increase font size */
+  text-align: center;
+  /*margin-bottom: 10px;*/
+  margin-top:10px;
+  text-transform: uppercase; /* Optional: Convert text to uppercase */
+  /* Linear gradient color for text */
+}
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+.second{
+  width: 100%; /* Set the width of the card to 100% of the parent container */
+    height: 50vh; /* Set the height of the card to 100% of the viewport height */
+    display: flex; /* Use flexbox for the card */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Arrange content vertically */
+    background-color:black;
+    border-radius: 80%;
+    overflow: hidden;
+}
+/*.transparent-background {
+  background-image: url('Hand.png');
+  background-size: cover; Ensures the image covers the entire card 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; /* Adjust the opacity value as needed 
+}*/
+.card-group{
+  margin-left:5rem;
+}
+.card-group .card {
+  width: 350px; /* Set the width of each card */
+ /* Add space between cards */
+  height: 200px;
+  border: 2px solid rgba(18, 57, 184, 0.5); /* Blue border */
+  background-color: black;
+}
+.card-group .card:last-child {
+  margin-right: 2rem; /* Remove margin-right from the last card */
+  border-radius:10px;
+  margin-left:3rem;
+}
+.card-group .card:first-child {
+  margin-left: 6rem; /* Remove margin-right from the last card */
+  border-radius:10px;
+}
+/*.second::before {
+  content: "";  
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(28, 28, 28, 0.589); /* Semi-transparent black background */
+
+.first {
+  position: relative; /* Ensure the container is positioned relative to the card */
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire width of the card */
+  height: 100%; /* Cover the entire height of the card */
+background-size: cover; /* Ensure the image covers the entire card */
+  background-repeat: no-repeat; 
+}
+body{
+  background-color: black;
+}
+.second {
+  border-radius: 10px; /* Set border radius for rounded edges */
+}
+
+/* CSS for hovered state */
+.second:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Larger shadow effect on hover */
+}
+.second .card-text {
+  color: white;
+}
+.video {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom:2rem;
+  margin-top:4rem;
+}
+.about{
+  margin-top:1rem;
+  margin-left:2rem;
+}
+.card-title-about{
+  font-size: 2em; /* Increase font size */
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Optional: Convert text to uppercase */
+  /* Linear gradient color for text */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Embossed effect */
+  text-shadow: -1px -1px 1px rgba(131, 176, 211, 0.5), 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+.card .second {
+  border-color: 2px solid rgba(18, 57, 184, 0.5); /* Blue border */
+}
+.card-title2{
+  margin-top: 1rem;
+  margin-left:0.5rem;
+  color:white;
+  margin-right:0.5rem;
+  font-weight:bolder;
+  font-size:1.5em;
+  margin-bottom:1rem;
+}
+.card-text{
+  margin-left:0.5rem;
+  color:white;
+  margin-right:0.5rem;
+}
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.card-title,.card-title-about {
+  text-transform: none; /* This will prevent the title from appearing in all caps */
+}
+.font{
+  font-size:2em;
+}
+.card-title{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.heading{
+  font-weight:200;
+}
+.main {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4); /* Adjust the shadow size and color as needed */
+  color: #ffffff; /* Set the text color to match the background color */
+  font-size:larger;
+}
+.main{
+  background: #121FCF;
+  background: linear-gradient(to right, #0816de 0%, #2175dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.footer{
+  background-color:rgba(1, 12, 48, 0.5);
+}
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+.pb-8 {
+  padding-bottom: 2rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.gap-4 {
+  gap: 1rem;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.join{
+  margin-top:2rem;
+}
+.heading{
+  font-size: 5em;
+}
+.main{
+  font-weight:bold;
+}
+.card-body-secondary {
+  position: relative;
+  left:50%;
+  top:20%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em;
+}
+.card-body-secondary2{
+  position: relative;
+  left:50%;
+  top:35%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em;
+}
+.about {
+  display: flex;
+  justify-content: space-between; /* To create space between the card and the image */
+}
+.image-container {
+  width: 30%; /* Adjust as needed */
+  margin-left:10rem;;
+  opacity:0.5;
+  position:relative;
+  padding-top:0;
+}
+.list-disc{
+  color:white;
+}
+.card-body-list{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; 
+}
+.card-title2{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.card-title-about{
+  background: #121FCF;
+background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
+}
+.card-body-contact{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;  
+}
+.card-body-list {
+  width: 100%;
+}
+
+.center-horizontal2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-text-list{
+  color:white;
+  margin-right:0.5rem;
+}
+.list-disc {
+  margin-left: 0; /* Remove default margin */
+  padding-left: 0; /* Remove default padding */
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.image-container:hover .overlay {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .first,
+  .second {
+    height: auto; /* Set height to auto for flexibility */
+  }
+
+  .image-container {
+    width: 100%; /* Ensure images take up full width on smaller screens */
+    margin-left: 0; /* Remove left margin */
+    margin-top: 1rem; /* Add some top margin for spacing */
+  }
+
+  .card-group .card {
+    width: 100%; /* Ensure cards take up full width */
+    margin: 1rem 0; /* Add margin for spacing between cards */
+  }
+
+  .card-group .card:first-child,
+  .card-group .card:last-child {
+    margin: 1rem 0; /* Add margin for spacing at top and bottom */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding for navbar links */
+  }
+
+  .card-title,
+  .card-title-about {
+    font-size: 2em; /* Reduce font size for card titles on smaller screens */
+  }
+
+  .card-body-secondary,
+  .card-body-secondary2 {
+    top: 10%; /* Adjust vertical position of card bodies */
+  }
+
+  .footer {
+    padding: 1rem; /* Add padding to footer for spacing */
+  }
+}
+/* Style for the popup */
+.popup {
+  display: none;
+  position: absolute;
+  background-color: rgba(5, 5, 5, 0.9); /* Background color with opacity */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  opacity: 0; /* Initial opacity */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+  margin-left:5.5rem;
+}
+
+/* Show popup when hovering over the card */
+.card:hover .popup {
+  display: block;
+  opacity: 1; /* Change opacity to fully visible */
+}
+
+.popup h5,p{
+  color:white;
+}
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.popup2 {
+  background-color: rgb(14, 13, 13,0.8);
+  padding: 40px; /* Increase padding to increase size */
+    border-radius: 10px;
+    animation: bounce 0.5s;
+    width: 80%; /* Set width */
+    max-width: 400px; /* Set maximum width */
+    height: 60vh; /* Set height to auto for content flexibility */
+  animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+  0% { transform: scale(0.95); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.close-popup,.popup-title{
+  color:white;
+}
+.row{
+  margin-left:8rem;
+  margin-bottom:5rem;
+}
+.card-main{
+  margin-right:5rem;
+  height:40vh;
+}
+.card-body-main{
+  height:40vh;
+}
+.why{
+  height:15vh;
+}
+.about2{
+  margin-top:2rem;
+  display: flex;
+  justify-content: space-between; /* To create space between the card and the image */
+}
+.image-container2 {
+  width: 30%; /* Adjust as needed */
+  margin-left:5rem;;
+  opacity:0.5;
+  position:relative;
+  padding-top:0;
+}
+.why-bg{
+  background-image: url('LogoHand.jpg');
+  background-repeat:no-repeat;
+  background-size:contain; /* Adjust as needed */
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+.popup-container-cost {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+.image-container2 {
+  width: 30%; /* Adjust as needed */
+  opacity:0.5;
+  position:relative;
+  padding-top:0;
+}
+
+
 }
