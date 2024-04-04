@@ -504,6 +504,10 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 }
 @media only screen and (max-width: 600px) {
+  body{
+    overflow-x:hidden;
+    width:100%;
+  }
   /* CSS to style the navbar */
 .navbar {
   background-color: black; /* Set the background color of the navbar to black */
