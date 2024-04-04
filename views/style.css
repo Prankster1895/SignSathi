@@ -618,7 +618,6 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 
 .card-group {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-left: 0; /* Reset margin */
 }
