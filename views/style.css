@@ -841,7 +841,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .image-container {
   width: 30%; /* Adjust as needed */
-  margin-left:10rem;;
+  margin-left:10rem;
   opacity:0.5;
   position:relative;
   padding-top:0;
@@ -1036,8 +1036,8 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   padding: 20px;
 }
 .image-container2 {
-  width: 30%; /* Adjust as needed */
-  margin-left:5rem;;
+  width: 20%; /* Adjust as needed */
+  margin-left:1rem;
   opacity:0.5;
   position:relative;
   padding-top:0;
