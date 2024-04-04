@@ -520,6 +520,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .center-horizontal {
   display: flex;
   justify-content: center;
+  width:100%
 }
 /* CSS to change the color of the navbar links on hover */
 .navbar-nav .nav-link:hover {
