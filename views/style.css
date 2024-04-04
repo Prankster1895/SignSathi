@@ -505,7 +505,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 @media only screen and (max-width: 600px) {
   body{
-    overflow-x:hidden;
+    overflow-x:visible;
     width:100%;
   }
   /* CSS to style the navbar */
@@ -604,7 +604,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 
 .second {
   width: 100%; /* Set the width to 90% of the parent container for better responsiveness */
-  height: 80vw; /* Change height to auto for responsiveness */
+  height: auto; /* Change height to auto for responsiveness */
   display: flex;
   justify-content: center;
   align-items: center;
