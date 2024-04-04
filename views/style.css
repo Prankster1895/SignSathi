@@ -592,7 +592,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   margin-top: 10px; /* Adjust margin as needed */
 }
 
-.card-title {
+.card-title,.card-title2 {
   font-size: 2em; /* Decrease font size for better fit */
   margin-top: 10px; /* Adjust margin as needed */
   text-align: center;
