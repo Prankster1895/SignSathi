@@ -524,7 +524,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .first {
   width: 100%; /* Set the width of the card to 100% of the parent container */
-    height: 80vh; /* Set the height of the card to 100% of the viewport height */
+    height: auto; /* Set the height of the card to 100% of the viewport height */
     display: flex; /* Use flexbox for the card */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
@@ -588,7 +588,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .second{
   width: 100%; /* Set the width of the card to 100% of the parent container */
-    height: 50vh; /* Set the height of the card to 100% of the viewport height */
+    height: auto; /* Set the height of the card to 100% of the viewport height */
     display: flex; /* Use flexbox for the card */
     justify-content: center; /* Center content horizontally */
     flex-direction: column; /* Arrange content vertically */
