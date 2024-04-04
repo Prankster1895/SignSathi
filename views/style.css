@@ -601,6 +601,9 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 
 @media (max-width: 600px) {
+  body{
+    overflow-x:hidden;
+  }
   .second {
     height: auto; /* Set height to auto for flexibility */
     border-radius: 10px; /* Adjust border-radius for a rounded shape on smaller screens */
