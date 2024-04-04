@@ -13,7 +13,7 @@ async function sendConfirmationEmail(email) {
         from: "signsathi.reach@gmail.com",
         to: email,
         subject: "Confirmation Email",
-        html: "<p>Thank you for registering with us!</p><p>Please confirm your email address to complete the registration.</p>"
+        html: "<p>Welcome to SignSathi – where innovation meets inclusivity, and communication knows no bounds!</p><p>At SignSathi, we believe that every voice deserves to be heard, understood, and embraced, regardless of any barriers that may stand in the way.By joining SignSathi, you're not just becoming a member of a community; you're becoming a part of a movement. A movement dedicated to breaking down communication barriers and fostering inclusivity for all individuals, regardless of their background, abilities, or circumstances.</p><p>Thank you for choosing us and for being a part of this incredible journey. Together, we're changing lives, one conversation at a time.</p>"
     };
 
     try {
