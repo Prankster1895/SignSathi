@@ -517,7 +517,10 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .navbar-nav .nav-link {
   color: white; /* Set the default color of the navbar links to white */
 }
-
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+}
 /* CSS to change the color of the navbar links on hover */
 .navbar-nav .nav-link:hover {
   color: blue; /* Change the color of the navbar links to blue on hover */
