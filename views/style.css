@@ -855,6 +855,13 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
     transform: translate(-50%, -50%); 
     line-height: 1.5em;
 }
+  .card-body-secondary3{
+  position: relative;
+  left:5%;
+  top:35%;
+    transform: translate(-50%, -50%); 
+    line-height: 1.5em;
+}
 .about {
   display: flex;
   justify-content: space-between; /* To create space between the card and the image */
@@ -969,7 +976,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 
   .card-body-secondary,
   .card-body-secondary2 {
-    top: 10%; /* Adjust vertical position of card bodies */
+    top: 20%; /* Adjust vertical position of card bodies */
   }
 
   .footer {
