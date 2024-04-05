@@ -684,6 +684,13 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 .card-group .card:first-child {
   margin-left: 0.5rem; /* Add margin-left back to the first card */
 }
+  .card.second.styling.transparent-background.cnt {
+  width: 100%; /* Adjust width to fit the screen width minus some margin */
+  margin-left: 1rem; /* Add some left margin to prevent the card from sticking to the left edge */
+  left: 0; /* Ensure the card starts from the left edge */
+  right: 0; /* Ensure the card ends at the right edge */
+  margin-right: auto; /* Center the card horizontally */
+  margin-top: 40%; /* Center the card vertically */
 
 .card-group .card {
   width: 45%; /* Set the width of each card */
@@ -925,10 +932,10 @@ background: linear-gradient(to right, #121FCF 0%, #cf2a28 100%);
 text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
 .card-body-contact{
-  position: absolute;
+  position: static;
   top: 30%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(10%, -50%);
   text-align: center;  
 }
 .card-body-list {
