@@ -1110,6 +1110,12 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   position:relative;
   padding-top:0;
 }
+  .center-horizontal3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    top:50%;
+}
 
 
 }
