@@ -650,6 +650,38 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   margin-left: 0; /* Reset margin */
   width:100%;
 }
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding to the sides */
+  }
+
+  .card.second {
+    width: calc(50% - 20px); /* Adjust the width of the card */
+    max-width: 45rem; /* Set a maximum width */
+  }
+
+  .image-container {
+    width: calc(50% - 20px); /* Adjust the width of the image container */
+    position: relative; /* Position the overlay relative to the container */
+  }
+
+  .image-container img {
+    max-width: 100%; /* Ensure the image fits within the container */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hide the overlay by default */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1; /* Show the overlay on hover */
+  }
 
 .card-group .card {
   height: 200px;
