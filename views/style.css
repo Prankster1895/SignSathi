@@ -974,8 +974,9 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   }
 
   .card-body-secondary,
-  .card-body-secondary2 {
-    top: 20%; /* Adjust vertical position of card bodies */
+  .card-body-secondary2,
+  .card-body-secondary3{
+    top: 50%; /* Adjust vertical position of card bodies */
   }
 
   .footer {
