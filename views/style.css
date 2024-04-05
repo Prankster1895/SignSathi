@@ -531,7 +531,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   color: blue; /* Change the color of the navbar links to blue on hover */
 }
   .card-body-secondary2 {
-  max-width: calc(100% - 75px); /* Set max width for the text content */
+  max-width: 100%; /* Set max width for the text content */
 }
 
 .card-title-about {
@@ -857,7 +857,6 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
 }
   .card-body-secondary3{
   position: relative;
-  left:5%;
   top:35%;
     transform: translate(-50%, -50%); 
     line-height: 1.5em;
