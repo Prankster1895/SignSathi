@@ -697,6 +697,12 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
     margin: 2% 0; /* Add a larger margin between cards */
   }
 }
+  .card-container{
+    height:50%;
+  }
+  .image-container2{
+    height:50%;
+  }
   .card-group {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
