@@ -35,10 +35,42 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.log("Error detected");
     }
+    const showButtons = document.querySelectorAll('.show-popup');
+    const closeButtons = document.querySelectorAll('.close-popup');
+    const popupContainer = document.getElementById('popup-container');
+
+    showButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            popupContainer.style.display = 'flex';
+        });
+    });
+
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            popupContainer.style.display = 'none';
+        });
+    });
+    const showButtonscost = document.querySelectorAll('.show-popup-cost');
+    const closeButtonscost = document.querySelectorAll('.close-popup-cost');
+    const popupContainercost = document.getElementById('popup-container-cost');
+
+    showButtonscost.forEach(button => {
+        button.addEventListener('click', function () {
+            popupContainercost.style.display = 'flex';
+        });
+    });
+
+    closeButtonscost.forEach(button => {
+        button.addEventListener('click', function () {
+            popupContainercost.style.display = 'none';
+        });
+    });
 });
-if (userCreated) { 
+ if (userCreated) { 
 
         // Disable the "Join the waitlist" button
         document.getElementById("join").disabled = true;
 
  } 
+ 
+
