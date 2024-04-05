@@ -507,6 +507,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   body{
     overflow-x:visible;
     width:100%;
+    background:black;
   }
   /* CSS to style the navbar */
 .navbar {
@@ -935,7 +936,7 @@ text-shadow: 0 0 5px #0e010180; /* Adjust the shadow color and size as needed */
   position: static;
   top: 30%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(10%,-50%);
   text-align: center;  
 }
 .card-body-list {
